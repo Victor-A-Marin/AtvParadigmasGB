@@ -18,6 +18,7 @@ public class Main {
 		usuarios.add(new Professor("Girafales", "Ciência da Computação", 2));
 		
 		emprestimos.add(new Emprestimo(usuarios.getFirst(), livros.getLast()));
+		emprestimos.add(new Emprestimo(usuarios.getLast(), livros.getLast()));
 		
 		for (int i = 0; i < livros.size(); i++) {
 			System.out.println(livros.get(i).exibirInformacoes()+"\n");
